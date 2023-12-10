@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Validating AsyncAPI document
-      uses: WaleedAshraf/asyncapi-github-action@v0.0.9
+      uses: WaleedAshraf/asyncapi-github-action
       with:
         filepath: asyncapi.json
       
