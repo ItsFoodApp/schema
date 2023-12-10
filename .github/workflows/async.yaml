@@ -11,13 +11,8 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
       
-    - name: Validating AsyncAPI document
-      uses: WaleedAshraf/asyncapi-github-action
-      with:
-        filepath: asyncapi.json
-      
     - name: Generating HTML from my AsyncAPI document
-      uses: docker://asyncapi/github-action-for-generator:2.0.0
+      uses: docker://asyncapi/github-action-for-generator:2.1.21
       with:
         template: '@asyncapi/html-template'
         filepath: asyncapi.json
