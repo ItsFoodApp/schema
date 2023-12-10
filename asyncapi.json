@@ -1,0 +1,22 @@
+{
+  "asyncapi": "3.0.0",
+  "info": {
+    "title": "ItsFood.App Schemas",
+    "version": "1.0.0",
+    "description": "Official schemas for the ItsFood.App Api",
+    "contact": {
+      "name": "Jonah Böther",
+      "email": "mail@jbtcd.me"
+    }
+  },
+  "components": {
+    "messages": {
+      "recipe": {
+        "name": "Demo Recipe",
+        "payload": {
+          "$ref": "./schemas/recipe.json"
+        }
+      }
+    }
+  }
+}

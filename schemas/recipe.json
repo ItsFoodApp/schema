@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "/itsfood.app/recipe.json#",
+  "title": "recipe",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "propertyNames":
+  {
+      "pattern": "^[a-z]+([0-9]|[A-Z][a-z]+)*[a-z]?$"
+  },
+  "required": [
+      "name"
+  ],
+  "properties": {
+      "name": {
+          "type": "string",
+          "description": "Name of the recipe",
+          "examples": [
+              "Test 1",
+              "Test 2"
+          ]
+      }
+  }
+}

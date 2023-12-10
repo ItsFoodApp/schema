@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@asyncapi/cli": "^1.2.10"
+  },
+  "scripts": {
+    "build-docs": "asyncapi generate fromTemplate ./asyncapi.json @asyncapi/html-template -o ./docs"
+  }
+}
